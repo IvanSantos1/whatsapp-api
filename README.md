@@ -7,7 +7,7 @@
 
 ### Get QRCode (quickly!!)
 
-`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session99`
+`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session99&image=true`
 - png
 
 `https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session99`
