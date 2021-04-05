@@ -3,19 +3,19 @@
 
 ### Start new whatsapp session
 
-`https://whatsapp.contrateumdev.com.br/start?sessionName=session1`
+`https://whatsapp.contrateumdev.com.br/start?sessionName=session99`
 
 ### Get QRCode (quickly!!)
 
-`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session1&image=true`
+`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session99`
 - png
 
-`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session1`
+`https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session99`
 - json (base64)
 
 ### Close whatsapp session
 
-`https://whatsapp.contrateumdev.com.br/close?sessionName=session1`
+`https://whatsapp.contrateumdev.com.br/close?sessionName=session99`
 
 ### Send message (POST method)
 
