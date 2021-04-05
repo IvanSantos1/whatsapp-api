@@ -20,49 +20,40 @@
 ### Send message (POST method)
 
 ```javascript
-(async () => {
-  const response = await fetch('https://whatsapp.contrateumdev.com.br/sendText', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(
-        {
-            sessionName: "session1", 
-            number: '556334140378',
-            text:"Hello\nWorld"
-        }
-    )
-  });
-  const content = await response.json();
-
-  console.log(content);
-})();  
+$.post({
+  method: 'POST',
+  url: `https://whatsapp.contrateumdev.com.br/sendText`,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  data: JSON.stringify({
+      sessionName: `session99`,
+      number: `5531995360492`,
+      text: `Olá`
+  }),
+  success: function(resultado, status, xhr) {
+      console.log(resultado)
+  }
+}) 
 ```
 
 ### Send File (POST method)
 
 ```javascript
-(async () => {
-    const response = await fetch('https://whatsapp.contrateumdev.com.br/sendFile', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(
-        {
-            sessionName: "session1", 
-            number: '556334140378',
-            base64Data:"44696d61", //hexadecimal
-            fileName:"test.txt",
-            caption: "Document" //optional
-        }
-    )
-  });
-  const content = await response.json();
+$.post({
+  method: 'POST',
+  url: `https://whatsapp.contrateumdev.com.br/sendFile`,
+  contentType:"application/json; charset=utf-8",
+  dataType:"json",
+  data: JSON.stringify({
+     sessionName: "session99", 
+      number: '556334140378',
+      base64Data:"44696d61", //hexadecimal
+      fileName:"test.txt",
+      caption: "Document" //optional
+  }),
+  success: function(resultado, status, xhr) {
+      console.log(resultado)
+  }
+}) 
 
-  console.log(content);
-})();  
 ```
