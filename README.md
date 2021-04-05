@@ -13,6 +13,10 @@
 `https://whatsapp.contrateumdev.com.br/qrcode?sessionName=session1`
 - json (base64)
 
+### Close whatsapp session
+
+`https://whatsapp.contrateumdev.com.br/close?sessionName=session1`
+
 ### Send message (POST method)
 
 ```javascript
@@ -62,7 +66,3 @@
   console.log(content);
 })();  
 ```
-
-### Close whatsapp session
-
-`https://whatsapp.contrateumdev.com.br/close?sessionName=session1`
