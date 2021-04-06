@@ -10,16 +10,19 @@
 ``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=MySession99/``
 <hr>
 
+## Get QR CODE
 <u>Get QRCODE</u>
 ``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99&image=true``
 > - image
 <hr>
 
+## Get QR CODE base64
 <u>Get QRCODE</u>
 ``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99``
 > - json (base64) ** recommended
 <hr>
 
+## Send Message
 <u>Send Message</u>
 ``GET : https://whatsapp.contrateumdev.com.br/sendText``
 > Request Body
@@ -28,6 +31,7 @@
 > - text - text of send to number
 <hr>
 
+## Send Files
 <u>Send Files</u>
 ``GET : https://whatsapp.contrateumdev.com.br/sendFile``
 > Request Body
