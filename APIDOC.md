@@ -7,9 +7,9 @@
 <hr>
 
 ## Get status session
-<u>Close Session</u>
+<u>Status Session</u>
 
-``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=MySession99/``
+``GET : https://whatsapp.contrateumdev.com.br/status?sessionName=MySession99/``
 <hr>
 
 ## Finish close session
