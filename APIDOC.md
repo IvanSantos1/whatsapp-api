@@ -1,29 +1,40 @@
 # API Doc
 
-## Start Session
+## First start session
 <u>Start Session</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/start?sessionName=MySession99/``
 <hr>
 
-## Close Session
+## Get status session
 <u>Close Session</u>
+
+``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=MySession99/``
+<hr>
+
+## Finish close session
+<u>Close Session</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=MySession99/``
 <hr>
 
 ## Get QR CODE
 <u>Get QRCODE</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99&image=true``
 > - image
 <hr>
 
-## Get QR CODE base64
-<u>Get QRCODE</u>
+## Get QR CODE
+<u>Get QRCODE base64</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99``
 > - json (base64) ** recommended
 <hr>
 
-## Send Message
+## Request send message
 <u>Send Message</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/sendText``
 > Request Body
 > - sessionName - name of session started
@@ -31,8 +42,9 @@
 > - text - text of send to number
 <hr>
 
-## Send Files
+## Request send files
 <u>Send Files</u>
+
 ``GET : https://whatsapp.contrateumdev.com.br/sendFile``
 > Request Body
 > - sessionName - name of session started
