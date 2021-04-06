@@ -42,7 +42,7 @@
 > - caption - text (optional)
 <hr>
 
-### Send message (POST method)
+### Example JS send message (POST method)
 
 ```javascript
 $.post({
@@ -61,7 +61,7 @@ $.post({
 }) 
 ```
 
-### Send File (POST method)
+### Example JS send File (POST method)
 
 ```javascript
 $.post({
