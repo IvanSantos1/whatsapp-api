@@ -1,10 +1,13 @@
 # API Doc
 
+## Start Session
+<u>Start Session</u>
+``GET : https://whatsapp.contrateumdev.com.br/start?sessionName=<MySession99>/``
+<hr>
+
 ## Close Session
 <u>Close Session</u>
-``POST : https://whatsapp.contrateumdev.com.br/close?sessionName=<MySession99>/``
-> Request Body
-> - message - contains the message to be sent
+``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=<MySession99>/``
 <hr>
 
 <u>Sending Images</u>
