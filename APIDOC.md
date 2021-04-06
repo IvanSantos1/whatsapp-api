@@ -2,94 +2,38 @@
 
 ## Start Session
 <u>Start Session</u>
-``GET : https://whatsapp.contrateumdev.com.br/start?sessionName=<MySession99>/``
+``GET : https://whatsapp.contrateumdev.com.br/start?sessionName=MySession99/``
 <hr>
 
 ## Close Session
 <u>Close Session</u>
-``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=<MySession99>/``
+``GET : https://whatsapp.contrateumdev.com.br/close?sessionName=MySession99/``
 <hr>
 
-<u>Sending Images</u>
-``POST : /api/v1/whatsapp/send/image/<phone_number>``
+<u>Get QRCODE</u>
+``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99&image=true``
+> - image
+<hr>
+
+<u>Get QRCODE</u>
+``GET : https://whatsapp.contrateumdev.com.br/qrcode?sessionName=MySession99``
+> - json (base64) ** recommended
+<hr>
+
+<u>Send Message</u>
+``GET : https://whatsapp.contrateumdev.com.br/sendText``
 > Request Body
-> - image - contains the base64 encoded / URL of image to be sent
-> - caption - (optional) - contains caption for the message
+> - sessionName - name of session started
+> - number - number with code of country
+> - text - text of send to number
 <hr>
 
-<u>Sending PDF</u>
-``POST : /api/v1/whatsapp/send/pdf/<phone_number>``
+<u>Send Files</u>
+``GET : https://whatsapp.contrateumdev.com.br/sendFile``
 > Request Body
-> - pdf - contains the base64 encoded / URL of pdf to be sent
+> - sessionName - name of session started
+> - number - number with code of country
+> - base64Data:"44696d61",//hexadecimal
+> - fileName: "test.txt",
+> - caption - text (optional)
 <hr>
-
-<u>Sending Locations</u>
-``POST : /api/v1/whatsapp/send/location/<phone_number>``
-> Request Body
-> - latitude - contains the string of latitude
-> - longitude - contains the string of longitude
-> - description - (optional) - contains description for the location
-<hr>
-
-<u>Get Chat By Id</u>
-``GET : /api/v1/whatsapp/send/getchatbyid/<phone_number>``
->Returns a Chat
-
-<hr>
-
-<u>Get Chats</u>
-``GET : /api/v1/whatsapp/send/getchats``
->Returns an Array of all Chats
-
-
-## Group Chat
-<u>Sending Messages to Group</u>
-``POST : /api/v1/whatsapp/send/group/text/<Group_Name>``
-> Request Body
-> - message - contains the message to be sent
-<hr>
-
-<u>Sending Images</u>
-``POST : /api/v1/whatsapp/send/group/image/<Group_Name>``
-> Request Body
-> - image - contains the base64 encoded / URL of image to be sent
-> - caption - (optional) - contains caption for the message
-<hr>
-
-<u>Sending PDF</u>
-``POST : /api/v1/whatsapp/send/group/pdf/<Group_Name>``
-> Request Body
-> - pdf - contains the base64 encoded / URL of pdf to be sent
-<hr>
-
-<u>Sending Locations</u>
-``POST : /api/v1/whatsapp/send/group/location/<Group_Name>``
-> Request Body
-> - latitude - contains the string of latitude
-> - longitude - contains the string of longitude
-> - description - (optional) - contains description for the location
-<hr>
-
-
-## Contact
-<u>Get Contacts</u>
-``GET : /api/v1/whatsapp/contact/getcontacts``
->Returns an Array of Contacts of the Current Instance
-
-<hr>
-
-<u>Get Contact</u>
-``GET : /api/v1/whatsapp/contact/getcontact/<phone_number>``
->Returns a Contact
-
-<hr>
-
-<u>Get Profile Pic</u>
-``GET : /api/v1/whatsapp/contact/getprofilepic/<phone_number>``
->Returns a URL of the User's Profile Picture if Privacy Settings allow it
-
-<hr>
-
-<u>Is Registered User</u>
-``GET : /api/v1/whatsapp/contact/isregistereduser/<phone_number>``
->Returns if a given User is registered on Whatsapp
