@@ -22,7 +22,7 @@ services:
       context: .
       target: myzapprod
     container_name: myzapprod
-    image: gcr.io/maisagil/myzap
+    #image: gcr.io/maisagil/myzap
     deploy:
       resources:
         limits:
