@@ -25,6 +25,12 @@ services:
 #    image: gcr.io/maisagil/myzap
     ports:
       - 3333:${HOST_PORT}
+    limits:
+      cpus: '0.50'
+      memory: 2GB
+    reservations:
+      cpus: '0.25'
+      memory: 20M
     networks:
       backend:
         aliases:
