@@ -27,10 +27,10 @@ services:
       resources:
         limits:
           cpus: '0.50'
-          memory: 2GB
+          memory: '512MB'
         reservations:
           cpus: '0.25'
-          memory: 20M
+          memory: '20M'
     ports:
       - 3333:${HOST_PORT}
     networks:
